@@ -1,5 +1,5 @@
  
-//  @import '../../node_modules/slick-carousel/slick/slick';
+ 
 
 @import'vars';
 @import'global';
@@ -7,5 +7,63 @@
 
 
 
+.header {
+    height: 55px;
+    background-color: #f7f7f7;
+}
+ 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+ 
+.header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 14px;
+  
+    a{
+        color: #555555;
+    }
+ span{
+    color: #e70505;
+ }
+   
+}
+.header__btn {
+    margin-right: 40px;
+    
+   
+}
+ 
+.briefcase {
+}
+.heaer__menu {
+   height: 50px;
+    background-color: #000 ;
+    font-size: 13px;
+    font-family: 'MYRIADPRO-REGULAR', sans-serif;
+    a{
+        color: #fff;
+        font-family: 'MYRIADPRO-REGULAR', sans-serif;
+    }
+ 
+}
+.menu {
+
+height: 50px;
+
+}
+ 
+.menu__list {
+    display: flex;justify-content: space-between;
+    justify-content: space-between;
+  
+    padding-top: 15px;
+
+}
  
