@@ -25,6 +25,8 @@
     align-items: center;
     font-family: 'Roboto-Medium', sans-serif;
     font-size: 14px;
+    margin-left: auto;
+
   
     a{
         color: #555555;
@@ -34,16 +36,41 @@
  }
    
 }
+
 .header__btn {
-    margin-right: 40px;
-    
+    margin-right: 5px; 
    
 }
  
-.briefcase {
+.header__btn-join {
+    background-color: #eeeeee;
+    padding: 0px 20px;
 }
+.header__btn-signin {
+    background-color: #eeeeee;
+    padding: 0px 20px;
+}
+.header__counter {
+    background-color: #eeeeee;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.icon-briefcase::before{
+    position: absolute;
+     right: -8px;
+     top: 2px;
+
+}
+.icon-briefcase {
+    margin-left: 8px;
+    color: #df1f26;
+    font-size: 14px;
+}
+ 
 .heaer__menu {
    height: 50px;
+  
     background-color: #000 ;
     font-size: 13px;
     font-family: 'MYRIADPRO-REGULAR', sans-serif;
@@ -60,10 +87,98 @@ height: 50px;
 }
  
 .menu__list {
-    display: flex;justify-content: space-between;
-    justify-content: space-between;
+    display: flex;
   
     padding-top: 15px;
 
 }
  
+.menu__list li+li{
+padding-right: 65px;
+}
+
+.slider {
+    margin-top: 22px;
+    margin-bottom: 60px;
+}
+.slider__inner {
+
+}
+.slider__item {
+    background-image: url(../img/slider-bg.jpg);
+    min-height: 400px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    font-family: 'MYRIADPRO-REGULAR', sans-serif;
+}
+ 
+ 
+  
+.slider__item-img img {
+    position: absolute;
+    right: 487px;
+    top: 4px;
+    width: 448px;
+    height: 443px;
+
+
+}
+.slider__item-titel {
+    width: 440px;
+    margin-left: 461px;
+    margin-bottom: -322px;
+    font-size: 52px;
+    padding-top: 95px;
+    span{
+        font-size: 16px;
+    }
+}
+.slider__item-circle {
+    position: absolute;
+    right:580px;
+    bottom: -190px;
+    position: relative;
+}
+.slider__item-text {
+    position: absolute;
+    top: 45px;
+    left: 39px;
+    width: 100%;
+    margin: 0 auto;
+    
+    max-width: 105px;
+    font-size: 32px;
+ 
+  
+   
+    span{
+        font-size: 18px;
+    }
+
+}
+
+.slick-arrow.slick-next{
+    background-image: url(../img/arrow-rhgit.png);
+    position: absolute;
+    bottom: 210px;
+    left: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+
+}
+
+.slick-arrow.slick-prev{
+    background-image: url(../img/arrow-left.png);
+    position: absolute;
+    left: 1675px;
+    z-index: 10;
+    bottom: 210px;
+    border: none;
+    cursor: pointer;
+    background-color: #df1f26;
+}
